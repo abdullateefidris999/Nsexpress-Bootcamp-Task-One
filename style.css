@@ -1,0 +1,420 @@
+/* Reset some default browser styles */
+body,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  /* box-sizing: border-box; */
+}
+
+p h1 h2 h3 h4 h5 h6 {
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #084aa1;
+}
+
+.menu ul {
+  display: flex;
+  gap: 60px;
+}
+
+.menu ul li a {
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #084aa1;
+  text-decoration: underline 2px;
+}
+
+/* Hero Section Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bec8ef8f;
+}
+
+section {
+  padding: 35px 20px;
+}
+
+#Hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.primary {
+  background-color: #084aa1;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #06387d;
+}
+
+.btn.secondary {
+  background-color: #fff;
+  color: #084aa1;
+  border: 2px solid #084aa1;
+}
+
+.btn.secondary:hover {
+  background-color: #084aa1;
+  color: #fff;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About section */
+#about {
+  background-color: #f9f9f9;
+}
+
+#about h3 {
+  color: #084aa1;
+}
+
+#about p {
+  color: #333;
+}
+
+/* Feature section */
+#feature {
+  padding: 0px 30px;
+}
+
+#feature .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#feature .content {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #333;
+}
+
+#feature h1 {
+  padding-top: 35px;
+  text-align: center;
+  color: #333;
+}
+
+#feature .container .content .content-icon i {
+  display: inline-block;
+  color: #084aa1;
+  font-size: 25px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+  padding-top: 15px;
+}
+
+#feature .container p {
+  margin-top: 0;
+}
+
+.content-icon {
+  display: flex;
+  gap: 10px;
+}
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  max-width: 300px;
+  flex: 1;
+}
+
+.card:hover {
+  background: #bec8ef8f;
+  transition: background-color 0.3s ease;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #084aa1;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.card blockquote {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact .container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 45%;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  color: #084aa1;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info ul li i {
+  color: #084aa1;
+  font-size: 18px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 45%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #084aa1;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #06387d;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1;
+  max-width: 30%;
+}
+
+.footer h3,
+.footer h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #084aa1;
+}
+
+.footer-social .social-icons a {
+  display: inline-block;
+  color: #ddd;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #084aa1;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ddd;
+}
